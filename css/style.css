@@ -22,4 +22,11 @@
   .align-y-middle {
     display: flex;
     align-items: center;
-  }
+}
+.css-animation:hover {
+    font-size: 1.2em;
+    transition: 0.5s;
+}
+.css-animation {
+    transition: 0.5s;
+}

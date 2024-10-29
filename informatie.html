@@ -4,70 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Milan Van Gestel">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <title>Over mij</title>
 </head>
-<body>
-    <nav class="nav_plus_logo">
-        <div class="nav_logo"><img src="images/logo_milan.png" alt="Een logo in het wit dat MILAN uitspelt." title="Logo"></div>
-        <div class="nav_links">
-            <a href="index.html">Home</a>
-            <a href="cv.html">CV</a>
-            <a href="contact.html">Contact</a>
-         <a href="informatie.html">Over mij</a>
-         <a href="projecten.html">Projecten</a>
+<body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark border-top border-bottom border-warning mb-4 sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" class="img-fluid" alt="Logo milan">
+          </a>  
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-3 mx-auto mb-2 mb-lg-0 fs-5">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cv.html">CV</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link"  href="contact.html">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="informatie.html">Over mij</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Projecten
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="project_festival_detail_pagina.html">Project 1</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="projecten.html">Alle projecten</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-    <main class="overmij_pagina_main">
-        <h1 class="header_overmij_pagina">Over mij</h1>
-        <p class="overmij_pagina_header_text">Hier vindt u wat meer persoonlijke informatie over mezelf.</p>
-        <h2 class="overmij_pagina_tussentitel1">Introductie</h2>
+      </nav>
+    <main class="text-light container">
+        <h1 class="fw-bold text-center mb-4">Over mij</h1>
+        <h2 class="">Introductie</h2>
         <p class="overmij_pagina_text">Ik ben Milan Van Gestel 20 jaar en ik heb een passie voor computers en programmeren ik heb ook al een paar projecten gemaakt waaronder meerdere websites. Daarnaast heb ik ook een interesse in muziek, gaming en natuurlijk computers. Ik ben afgestudeerd van hogeschool Thomas More met een graduaat in programmeren in het jaar 2026. Tijdens de periode van mijn graduaat heb ik leren werken met C#, html, CSS, PHP, ... (De volledige lijst kan je vinden op mijn CV).</p>
-        <h3 class="overmij_pagina_tussentitel1">Intresses</h3>
-        <p class="overmij_pagina_text">Tijdens het verloop van mijn studie op de hogeschool ben ik erachter gekomen dat ik vooral een interesse heb in backend development. De reden waarom backend development mij meer aanspreekt is omdat ik meer geïntresseerd ben in het manage van databases, onderhouden van servers, het onderhouden en implementeren van API’s, ... . De reden waarom ik de IT wereld wil betreden is omdat ik al sinds dat ik in de lagere school zat een intresse had in programmeren en computers. Deze interesse kwam vooral voort ut mijn interesse in games waardoor ik origineel game developer wou worden. Ik heb nog altijd interesse in game development maar door de onstabiliteit in die sector heb ik besloten om deze droom/interesse even op te bergen en in een stabielere sector een job te gaan zoeken.</p>
-        <table class="overmij_pagina_tabel">
-            <caption id="overmij_pagina_tabel_caption">Hobbies</caption>
-            <tr class="overmij_pagina_tabel_row">
-                <th class="tabel_header">Overzicht van mijn hobbies</th>
-            </tr>
-            <tr class="overmij_pagina_tabel_row">
-                <td class="tabel_data"><a href="#computers">Computers</a></td>
-            </tr>
-            <tr class="overmij_pagina_tabel_row">
-                <td class="tabel_data"><a href="#gaming">Gaming</a></td>
-            </tr>
-            <tr class="overmij_pagina_tabel_row">
-                <td class="tabel_data"><a href="#muziek">Muziek</a></td>
-            </tr>
-            <tr class="overmij_pagina_tabel_row">
-                <td class="tabel_data"><a href="#lezen">Lezen</a></td>
-            </tr>
-        </table>
-        <p class="overmij_pagina_tussentitel2" id="computers">Computers</p>
-        <div class="computers_img_text_container">
-            <p class="overmij_pagina_text">In mijn vrijetijd ben ik naast programmeren ook bezig met de hardware waarop ik programmeer namelijk mijn computers en mijn laptops. Op dit momment ben bezig met het ontmantelen van een oude desktop waarna ik deze onderdelen kan hergebruiken voor andere projecten. Mijn hoofd desktop heb ik persoonlijk in elkaar gestoken dit was in der tijd een zware klus voor mij maar uiteindelijk na veel bloed zweet en tranen heb ik het toch klaar gekregen.</p>
-            <div class="computers_img">
-                <img src="images/motherboard.png" alt="Foto van een moederbord" title="Moederbord">
+        <h3 class="text-center mt-4 mb-3">Intresses</h3>
+        <div id="carouselExampleCaptions" class="carousel slide my-2 mb-4">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
             </div>
-        </div>
-        <p class="overmij_pagina_tussentitel2" id="gaming">Gaming</p>
-        <p class="overmij_pagina_text">Naast computers ben ik vaak bezig met gamen. Ik speel vooral singelplayer RPG's zoals Final Fantasy, Baldurs Gate 3, Persona 5, ... . Maar af en toe speel ik ook multiplayer games zoals Call of Duty, Rainbow six, Hearts of Iron 4, ... . Ik speel zowel op desktop als console maar persoonlijk speel ik liever op desktop.</p>
-        <p class="overmij_pagina_tussentitel2" id="muziek">Muziek</p>
-        <p class="overmij_pagina_text">Muziek heeft ook een grote invloed in mijn leven. Muziek heeft mij door enkele moeilijke periodes in mijn leven geholpen en daardoor ben ik zeer geïntresseerd geraakt door muziek. Naast het luisteren van muziek ben ik zelf ook producer helaas is het al wel een tijdje geleden sinds ik me echt bezig heb gehouden met het producen van muziek. Dit kwam vooral het geberek aan tijd maar ik hoop dat dit snel zal veranderen. Enkele van mijn favoriete genres zijn dnb, techno, house en nog enkele andere genres. Ik probeer ook altijd zo veel mogelijk naar festivals te gaan omdat het toch een andere muziek ervaring geeft. Daarnaast is het vaak toch een andere ervaring wanneer je muziek met andere beluisterd dan alleen.</p>
-        <p class="overmij_pagina_tussentitel2" id="lezen">Lezen</p>
-        <div class="lezen_img_text_container">
-            <p class="overmij_pagina_text">Nog een hobby van mij is lezen. Ik heb niet echt een voorkeur voor bepaalde genres maar de genres die ik het meeste lees zijn Sci-Fi, biografieën en avontuurlijke boeken.</p>
-            <div class="lezen_img">
-                <img src="images/books.png" alt="Foto van boeken" title="Boeken">
+            <div class="carousel-inner w-50 mx-auto">
+              <div class="carousel-item active">
+                <img src="images/books.png" class="img-fluid w-100" alt="Een foto van een boeken">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Lezen</h5>
+                  <p>In mijn vrijetijd lees ik ook. Ik heb niet meteen een voorkeur voor bepaalde genres.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/motherboard.png" class="img-fluid w-100" alt="Een fotot ven een moederbord ven een computer">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Computers</h5>
+                  <p>Ik ben naast programmeren ook bezig met het maken van computers. Op dit momment ben ik bezig met het uit elkaar halen van een oude computer</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="images/music.png" class="img-fluid w-100" alt="Een foto van een dj controller">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Muziek</h5>
+                  <p>Muziek is ook een van mijn intresses. Enkele van mijn favoriete genres zijn dnb, techno, house,... .</p>
+                </div>
+              </div>
+            <div class="carousel-item">
+              <img src="images/controller.png" class="img-fluid w-100" alt="Een foto van van een xbox controller">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Gaming</h5>
+                <p>In mijn vrijetijd gaming ik ook. Ik speel vooral RPG games zoals Persona 5, Final Fantasy, Baldurs Gate 3, ... .</p>
+              </div>
             </div>
+            <div class="carousel-item">
+              <img src="images/gunpla.png" class="img-fluid w-100" alt="Een foto van een gundam">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Modelbouw</h5>
+                <p>Soms maak ik in mijn vrijetijd ook modellen dit kan gaan van model auto's tot gunpla en nog meer.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="images/bike.png" class="img-fluid w-100" alt="Een foto van een fiets">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Fietsen</h5>
+                <p>Nog een intresse van mij is fietsen vroeger deed ik dit vaker maar de laatste tijd heb ik het wat druk gehad dus is dit wat vermindert.</p>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
+        <table class="table text-center table-dark border border-warning w-50 mx-auto">
+            <thead>
+              <tr>
+                <th scope="col">Overzicht van mijn intresses</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tabel_data"><a href="#lezen" class="text-light text-decoration-underline">Lezen</a></td>
+              </tr>
+              <tr>
+                <td class="tabel_data"><a href="#computers" class="text-light text-decoration-underline">Computers</a></td>
+              </tr>
+              <tr>
+                <td class="tabel_data"><a href="#muziek" class="text-light text-decoration-underline">Muziek</a></td>
+              </tr>
+              <tr>
+                <td class="tabel_data"><a href="#gaming" class="text-light text-decoration-underline">Gaming</a></td>
+              </tr>
+              <tr>
+                <td class="tabel_data"><a href="#modelbouw" class="text-light text-decoration-underline">Modelbouw</a></td>
+              </tr>
+              <tr>
+                <td class="tabel_data"><a href="#fietsen" class="text-light text-decoration-underline">Fietsen</a></td>
+              </tr>
+            </tbody>
+          </table>
+        <p id="lezen" class="fs-4 mb-1 mt-4">Lezen</p>
+        <p class="mb-4">Nog een hobby van mij is lezen. Ik heb niet echt een voorkeur voor bepaalde genres maar de genres die ik het meeste lees zijn Sci-Fi, biografieën en avontuurlijke boeken.</p>
+        <p id="computers" class="fs-4 mb-1 mt-4">Computers</p>
+        <p class="mb-4">In mijn vrijetijd ben ik naast programmeren ook bezig met de hardware waarop ik programmeer namelijk mijn computers en mijn laptops. Op dit momment ben bezig met het ontmantelen van een oude desktop waarna ik deze onderdelen kan hergebruiken voor andere projecten. Mijn hoofd desktop heb ik persoonlijk in elkaar gestoken dit was in der tijd een zware klus voor mij maar uiteindelijk na veel bloed zweet en tranen heb ik het toch klaar gekregen.</p>
+        <p id="muziek" class="fs-4 mb-1 mt-4">Muziek</p>
+        <p class="mb-4">Muziek heeft ook een grote invloed in mijn leven. Muziek heeft mij door enkele moeilijke periodes in mijn leven geholpen en daardoor ben ik zeer geïntresseerd geraakt door muziek. Naast het luisteren van muziek ben ik zelf ook producer helaas is het al wel een tijdje geleden sinds ik me echt bezig heb gehouden met het producen van muziek. Dit kwam vooral het geberek aan tijd maar ik hoop dat dit snel zal veranderen. Enkele van mijn favoriete genres zijn dnb, techno, house en nog enkele andere genres. Ik probeer ook altijd zo veel mogelijk naar festivals te gaan omdat het toch een andere muziek ervaring geeft. Daarnaast is het vaak toch een andere ervaring wanneer je muziek met andere beluisterd dan alleen.</p>
+        <p id="gaming" class="fs-4 mb-1 mt-4">Gaming</p>
+        <p class="mb-4">Naast computers ben ik vaak bezig met gamen. Ik speel vooral singelplayer RPG's zoals Final Fantasy, Baldurs Gate 3, Persona 5, ... . Maar af en toe speel ik ook multiplayer games zoals Call of Duty, Rainbow six, Hearts of Iron 4, ... . Ik speel zowel op desktop als console maar persoonlijk speel ik liever op desktop.</p>
+        <p id="modelbouw" class="fs-4 mb-1 mt-4">Modelbouw</p>
+        <p class="mb-4">In mijn vrijetijd bouw ik soms miniatuur modellen van auto's of gunpla. Ik ben op dit momment bezig met het bouwen van een gunpla model RG XXXG-01W Wing Gundam EW. Ik doe dit zowel om dat het tof vind om deze voorwerpen te verzamelen maar ook omdat ik het process van het opbouwen zeer tof vind.</p>
+        <p id="fietsen" class="fs-4 mb-1 mt-4">Fietsen</p>
+        <p class="mb-4">In mijn vrijetijd fietst ik ook graag. Ik doe dit vooral voor de ontspannig ik fiets daarom ook meestal in bossen of op andere rustige plaatsen. Op dit momment heb niet echt intresse om dit op een competitief niveau te doen.</p>
     </main>
     <footer class="color-JetB container-fluid">
         <div class="row ">
@@ -79,9 +164,9 @@
         </div>
         <div class="row my-2">
           <div class="col text-center my-2">
-            <a href="" class="text-decoration-none text-light fs-4 mx-2"><i class="bi bi-instagram"></i></a>
-            <a href="" class="text-decoration-none text-light fs-4 mx-2"><i class="bi bi-linkedin"></i></a>
-            <a href="" class="text-decoration-none text-light fs-4 mx-2"><i class="bi bi-facebook"></i></a>
+            <a href="https://www.instagram.com/thomasmore.be/" class="text-decoration-none text-light fs-4 mx-2" target="_blank"><i class="bi bi-instagram css-animation"></i></a>
+            <a href="https://www.linkedin.com/in/milan-vangestel-914016332/" class="text-decoration-none text-light fs-4 mx-2" target="_blank"><i class="bi bi-linkedin css-animation"></i></a>
+            <a href="https://www.facebook.com/ThomasMoreBE/?locale=nl_BE" class="text-decoration-none text-light fs-4 mx-2" target="_blank"><i class="bi bi-facebook css-animation"></i></a>
           </div>
         </div>
         <div class="border-bottom border-warning w-50 mx-auto">
@@ -92,5 +177,6 @@
           </div>
         </div>
       </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
